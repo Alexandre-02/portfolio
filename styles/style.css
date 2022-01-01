@@ -1,0 +1,52 @@
+/* CSS Document */
+/* reset css max width 100%  */
+
+* {
+  padding: 0em;
+  margin: 0em;
+  box-sizing: border-box;
+  /* font-family: "Barlow", sans-serif; */
+}
+
+/* hamburger menu */
+/* header nav ul li div ul {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 2em;
+  padding-top: 2em;
+  background-color: var(--hamburgerBackgroundColor);
+  z-index: 1;
+} */
+
+
+/* underline in hamburgermenu links weghalen */
+/* header nav ul li div ul a {
+  text-decoration: none;
+  color: var(--primaryColor);
+} */
+
+/* verschijnen en verdwijnen v hamburgermenu */
+/* .visible {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 0.8s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.8s ease-in-out;
+} */
+
+/* styling hamburger button weghalen */
+/* header button {
+  background: none;
+  border: none;
+} */
