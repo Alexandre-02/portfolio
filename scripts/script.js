@@ -1,24 +1,24 @@
-// JavaScript Document
+//JavaScript Document
 
 // hamburger menu 
-// var hamburgerMenu = document.querySelector("header nav ul li div ul");
+var hamburgerMenu = document.querySelector("header nav div ul");
 
-// var menuButton = document.querySelector(".hamburger-icon");
+var menuButton = document.querySelector(".hamburger-icon");
 
-// var closeButton = document.querySelector(".icon-close");
+var closeButton = document.querySelector(".icon-close");
 
 
 
-// menuButton.addEventListener("click", addHamburgerMenu);
+menuButton.addEventListener("click", addHamburgerMenu);
 
-// function addHamburgerMenu(){
+function addHamburgerMenu(){
 
-//     hamburgerMenu.classList.add("visible");
+    hamburgerMenu.classList.add("visible");
 
-// }
+}
 
-// closeButton.addEventListener("click", closeHamburgerMenu);
+closeButton.addEventListener("click", closeHamburgerMenu);
 
-// function closeHamburgerMenu(){
-//     hamburgerMenu.classList.remove("visible");
-// }
+function closeHamburgerMenu(){
+    hamburgerMenu.classList.remove("visible");
+}
