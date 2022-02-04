@@ -6,6 +6,7 @@
   margin: 0em;
   box-sizing: border-box;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root{
@@ -49,7 +50,6 @@ img{
 
 /* hamburger menu */
 header nav div ul {
-  opacity: 0;
   transform: translateY(-100%);
   transition: all 0.8s ;
   display: flex;
@@ -62,10 +62,16 @@ header nav div ul {
   background-color: var(--primaryColor);
   z-index: 1;
   text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 /* close button over hamburger menu plaatsen */
 header nav div ul li:first-child {
+  position: absolute;
+  top:0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
 
@@ -88,15 +94,13 @@ header nav div ul a {
 
 /* verschijnen en verdwijnen v hamburgermenu */
 .visible {
-  opacity: 1;
   transform: translateY(0%);
-  transition: all 0.8s ;
+  transition: transform 0.8s ;
 } 
 
 .hidden {
-  opacity: 0;
   transform: translateY(100%);
-  transition: all 0.8s ;
+  transition: transform 0.8s ;
 } */
 
 /* styling hamburger button weghalen */
@@ -138,11 +142,6 @@ main > section{
   }
 
   header nav button{
-    display: none;
-  }
-
-  /* waarom werkt dit niet? */
-  header li:first-of-type{
     display: none;
   }
 
