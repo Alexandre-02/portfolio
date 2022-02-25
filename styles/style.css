@@ -7,21 +7,61 @@
   box-sizing: border-box;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   scroll-behavior: smooth;
+  
 }
 
 :root{
-  --textNormal: slate;
+
+  /* --textHeading: #a6b2ec;
+  --textNormal: #161e35;
+  --backgroundColor: #161e35 ;
+  --primaryColor: #a6b2ec;
+  --secondaryColor: #3071e7 ;
+  --altColor: white; */
+
+/* 
+  --textHeading: #dbd8e3;
+  --textNormal: #2a2438;
+  --backgroundColor: #2a2438 ;
+  --primaryColor: #dbd8e3;
+  --secondaryColor: #5c5470 ; */
+
+
+  --textNormal: #f4fcfe;
+  --backgroundColor: #303041;
+  --primaryColor: #3d3a50;
+  --secondaryColor: #0ea2f6 ;
+
+  /* --textNormal: slate;
   --backgroundColor: #F7F7F7;
   --primaryColor: #E0E7F6;
-  --secondaryColor:white ;
+  --secondaryColor:white ; */
 }
 body{
   background-color: var(--backgroundColor); 
 }
 
+h2{
+  color: var(--textHeading);
+}
+
+h3{
+  color: var(--textHeading);
+}
+
+p{
+  color: var(--textNormal);
+  padding: 1em;
+}
+
 header nav{
   display: flex;
   justify-content: flex-end;
+  /* background-color: var(--primaryColor); */
+}
+
+header section{
+  padding-top:1em ;
 }
 
 header nav button{
@@ -126,12 +166,23 @@ main > section{
   margin-bottom: 3em;
 }
 
-main > section{
+main div{
   display: grid;
+  margin-bottom: 3em;
+}
+
+main div ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat( auto-fit (10em, 1fr ));
   grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+main div ul li{
+  padding: 1em;
   background-color: var(--primaryColor);
   border-radius: 25px;
-  margin-bottom: 3em;
 }
 
 @media (min-width: 43em) {
@@ -173,6 +224,31 @@ main > section{
   /* hoe overrule ik hier de margin die ik eerder heb gegeven? */
   header nav div ul li a{
     margin-top: 1em;
+
+    /* waarom veranderd de kleur van de tekst niet??? */
+    /* color: var(--textHeading)  */
   }
 
+  body{
+    margin-left: 3em;
+    margin-right: 3em;
+  };
+}
+
+@media (min-width: 60em) {
+  body{
+    margin-left: 7em;
+    margin-right: 7em;
+
+  };
+}
+
+
+
+@media (min-width: 80em) {
+  body{
+    margin-left: 10em;
+    margin-right: 10em;
+
+  };
 }
