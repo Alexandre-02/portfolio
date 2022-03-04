@@ -12,6 +12,23 @@
 
 :root{
 
+  /* cream blue */
+  --textHeading: #365A80;
+  --textNormal: black;
+  --backgroundColor: #FCFDFF ;
+  --primaryColor: #E5E7F4;
+  --secondaryColor: #89A9CD ;
+  --altColor: #; 
+
+  /* grey-ish */
+  /* --textHeading: black;
+  --textNormal: black;
+  --backgroundColor: #FCFAF7 ;
+  --primaryColor: #ECEAE8;
+  --secondaryColor: #D3D3D2 ;
+  --altColor: white;  */
+
+  /* blue */
   /* --textHeading: #a6b2ec;
   --textNormal: #161e35;
   --backgroundColor: #161e35 ;
@@ -19,30 +36,28 @@
   --secondaryColor: #3071e7 ;
   --altColor: white; */
 
-/* 
-  --textHeading: #dbd8e3;
+  /* purple */
+  /* --textHeading: #dbd8e3;
   --textNormal: #2a2438;
   --backgroundColor: #2a2438 ;
   --primaryColor: #dbd8e3;
   --secondaryColor: #5c5470 ; */
 
-
-  --textNormal: #f4fcfe;
+  /* purple2 */
+  /* --textNormal: #f4fcfe;
   --backgroundColor: #303041;
   --primaryColor: #3d3a50;
-  --secondaryColor: #0ea2f6 ;
+  --secondaryColor: #0ea2f6 ; */
 
-  /* --textNormal: slate;
-  --backgroundColor: #F7F7F7;
-  --primaryColor: #E0E7F6;
-  --secondaryColor:white ; */
 }
+
 body{
   background-color: var(--backgroundColor); 
 }
 
 h2{
   color: var(--textHeading);
+  
 }
 
 h3{
@@ -124,6 +139,7 @@ header nav div ul li a{
   align-items: center;
   font-size: 1.5em;
   margin-top: 1em;
+  color:var(--textHeading);
 }
 
 /* underline in hamburgermenu links weghalen */
@@ -160,7 +176,9 @@ main{
 
 main > section{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(152px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); */
   background-color: var(--primaryColor);
   border-radius: 25px;
   margin-bottom: 3em;
@@ -233,6 +251,11 @@ main div ul li{
     margin-left: 3em;
     margin-right: 3em;
   };
+
+  main > section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 60em) {
